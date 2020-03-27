@@ -3,7 +3,8 @@
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli != []
+  case katz_deli == []
+  when false
     new_katz_deli = []
     counter = 1
     katz_deli.each do |name|
@@ -11,7 +12,7 @@ def line(katz_deli)
       counter +=1
     end
     puts "The line is currently: " + new_katz_deli.join(" ")
-  else
+  when true
     puts "The line is currently empty."
   end
 end
